@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <div class="container2">
+        <div class="row1">
+             <img class="about-me2"src="portfolioImages/myPortfolioProfile.jpg" >
+        </div>
+        <div class="row2">
+            <h1>About me</h1>
+            <div class="p-text">
+            <p>Hi there! I'm Sandhya Bhakuni, a budding front-end developer from Delhi with a passion for creating dynamic and user-friendly web experiences. <br> As a fresher, It is time to take step in the world of my dream career where I can show my skills and proove myself.I'm excited to dive into the world of web development and bring fresh, innovative ideas to the table. <br>
+            My journey into front-end development began with a fascination for how websites work  anda desire to build intuitive, engaging interfaces. I'm particularly interested inresponsive design and ensuring that websites look and function beautifully across alldevices. <br>                 
+            </p>
+            <hr>
+            <div class="info-tabs">
+            <p class="tab-links action" onclick="openTab('education')">Education</p>
+            <p class="tab-links" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            </div>
+            <div class="data">
+                    <ul class="my-data show" id="education">
+                    <li><span>School(2022):</span> <br>passed 12th from Govt.Sarvodya Kanya Vidhyalaya,Burari,Delhi-110084<li>
+                    <li><span>University(2022-2025):</span> <br>persuing BCA from Sri Guru Tegh Bahadur Institute of Managementand Information Technology(SGTBIMIT affiliated to GGSIPU),near Model Town,Delhi</li>
+                    </ul>   
+            </div>
+            <div class="data">
+                    <ul class="my-data" id="skills">
+                    <span>Technical-skills</span>
+                    <ul>
+                    <li>Programming languages like,C,C++,Java,Php,Database management system</li>
+                    <li>Web developement (eg.HTML,CSS,JavaScript)</li>
+                    <li>Basic-Microsoft office(eg.MS-Word,MS-Excel,MS-PowerPoint)</li>
+                    </ul>      
+                    <br>                 
+                    <span class="soft-skills">Soft-skills</span>
+                    <ul>
+                    <li>Problem-Solving</li>
+                    <li>Time-Management</li>
+                    <li>Teamwork</li>
+                    <li>Risk-taking</li>
+                    </ul>
+                    </ul>   
+                </div>
+
+                <div class="data">
+                    <ul class="my-data" id="experience">
+                    <span>Currently doing internship at :</span>
+                    <li>Oasis Infobite</li>
+                    <li>Priodigy Infotech</li>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let myTabs=document.getElementsByClassName('tab-links');
+        let myDatas=document.getElementsByClassName('my-data');
+        function openTab(option){
+            for(myTab of myTabs){
+                myTab.classList.remove('action')
+            }
+            for(myData of myDatas){
+                myData.classList.remove('show')
+            }
+            event.currentTarget.classList.add('action');
+            document.getElementById(option).classList.add('show');
+    
+        }
+    
+    </script>
+</body>
+</html>

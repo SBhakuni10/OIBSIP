@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+ 
+}
+.Rock{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    
+}
+
+.Paper{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+
+}
+.Scissor{
+    height:80px;
+    width: 80px;
+    border-radius: 50px;
+}
+.myBtn{
+    background-color: greenyellow;
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 20px;
+
+}
+
+.resetBtn{
+    width: 80px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    background-color: orange;
+    border-radius: 16px;
+    border: 2px solid brown;
+    font-size: 20px;
+
+}

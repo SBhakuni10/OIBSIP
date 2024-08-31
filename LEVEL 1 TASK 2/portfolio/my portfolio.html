@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="index3.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <div id="bg-img">
+    <header>
+        <nav>
+           <div class="container1">
+            <img  class="logo-img"src="portfolioImages/logo.png" alt="logo">
+            <ul class="list-items openmenu">
+            <li><a href="my portfolio.html">Home</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a href="projects. in my portfolio.html">Projects</a></li>
+            <li><a href="contact me.html">Contact Me</a></li>
+           </ul>
+           </div>
+        </nav> 
+        
+        <div class="header-text">
+            <h2>Hello,Welcome</h2>
+            <h1>I'm <span>Sandhya Bhakuni</span></h1>
+            <h2>Front-end Web Developer</h2>
+            <p>Hello!,I'm sandhya bhakuni, a passionate web developer with a knack <br>for creating visually appealing  and user-friendly websites.With a <br>strong background in HTML,CSS,and JavaScript,I bring designs to  <br>life  and ensure seamless user experiences.</p>
+            <button class="my-btn"> <a href="portfolioImages/my current resume.pdf" download="Sandhya resume"> Download Resume </a></button>
+            <button class="my-btn"> <a href="portfolioImages/my current resume.pdf" > View Resume </a></button>
+
+        </div>    
+    </header>
+    </div>
+
+    <main>
+        <hr>
+        <div class="container2">
+            <div class="row1">
+                 <img class="about-me2"src="portfolioImages/myPortfolioProfile.jpg" >
+            </div>
+            <div class="row2">
+                <h1>About me</h1>
+                <div class="p-text">
+                <p>Hi there! I'm Sandhya Bhakuni, a budding front-end developer from Delhi with a passion for creating dynamic and user-friendly web experiences. <br> As a fresher, It is time to take step in the world of my dream career where I can show my skills and proove myself.I'm excited to dive into the world of web development and bring fresh, innovative ideas to the table. <br>
+                My journey into front-end development began with a fascination for how websites work  anda desire to build intuitive, engaging interfaces. I'm particularly interested inresponsive design and ensuring that websites look and function beautifully across alldevices. <br>                 
+                </p>
+                <hr>
+                <div class="info-tabs">
+                <p class="tab-links action" onclick="openTab('education')">Education</p>
+                <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                </div>
+                <div class="data">
+                        <ul class="my-data show" id="education">
+                        <li><span>School(2022):</span> <br>passed 12th from Govt.Sarvodya Kanya Vidhyalaya,Burari,Delhi-110084<li>
+                        <li><span>University(2022-2025):</span> <br>persuing BCA from Sri Guru Tegh Bahadur Institute of Managementand Information Technology(SGTBIMIT affiliated to GGSIPU),near Model Town,Delhi</li>
+                        </ul>   
+                </div>
+                <div class="data">
+                        <ul class="my-data" id="skills">
+                        <span>Technical-skills</span>
+                        <ul>
+                        <li>Programming languages like,C,C++,Java,Php,Database management system</li>
+                        <li>Web developement (eg.HTML,CSS,JavaScript)</li>
+                        <li>Basic-Microsoft office(eg.MS-Word,MS-Excel,MS-PowerPoint)</li>
+                        </ul>      
+                        <br>                 
+                        <span class="soft-skills">Soft-skills</span>
+                        <ul>
+                        <li>Problem-Solving</li>
+                        <li>Time-Management</li>
+                        <li>Teamwork</li>
+                        <li>Risk-taking</li>
+                        </ul>
+                        </ul>   
+                    </div>
+
+                    <div class="data">
+                        <ul class="my-data" id="experience">
+                        <span>Currently doing internship at :</span>
+                        <li>Oasis Infobite</li>
+                        <li>Priodigy Infotech</li>   
+                        <li>SkillCraft Technology </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container3">
+            <div class="heading"><h1> My Projects</h1></div>
+            <div class="my-column">
+                <img  class="project-img" src="portfolioImages/calculator.jfif">
+            <div class="right-column"> 
+                <h1>Calulator</h1>
+                <p>This project involves developing a basic calculator application capable of performing fudamental arithmetic opertions such as:<span>addition,subtraction,multiplication,and division.</span>The application features a user-friendly interface where users can input numbers and select operations to obtain results.
+                </p>
+                
+                    <button class="my-btn" id="calculator"> Open Tab</button>
+            </div>
+        </div>
+           
+            <div class="my-column">
+                <img  class="project-img" src="portfolioImages/myntra.png">
+                <div class="right-column">
+                    <h1>Myntra-Clone</h1>
+                    <p>The Myntra shopping clone app replicates the design and layout of the Myntra e-commerce platform using only <span> HTML and CSS</span>.It features a responsive design with a product grid displaying images,titles and prices.The app includes a user-fiendly interface with a search bar and a visually appealing shopping cart layout.This Project showcase my skills in creating responsive,aesthetically pleasing web pages purely with HTML znd CSS,emphasizing my ability to build functional and attractive front end designs with relying on javascript and backened technologies. 
+                       </p>
+                        <button class="my-btn" id="Myntraclone"> Open Tab</button>
+                </div>
+            </div>
+            <div class="my-column">
+                 <img class="project-img" src="portfolioImages/rockpaperscissor.jfif" >
+            <div class="right-column">
+                <h1>Rock Paper Scissor Game</h1>
+                <p>A Web based rock-paper scissor game developed using HTML,CSS and JavaScript.The project features a user-friendly interface with interactive buttons and real time feedback.Java-Script handles the game logic,including random choice generation and result determination.CSS ensures a responsive design with animations for enhanced user experience.The game tracks and displays scores for wins,loses and draws.Key challenges including ensuring fair computer choices using<span> Math.random()</span>and designing a responsive layout. <br>
+                    <button class="my-btn" id="game"> Open Tab</button>
+            </div>
+            </div>
+        </div>
+        </main>
+        
+        <footer>
+            <hr>
+        <div class="container4">
+            <div class="contact">
+                
+                    <h1 class="sub-heading">Contact Me</h1>
+                    <p>sandhyabhakuni2003@gmail.com</p>
+                    <br>
+                    <p><span><i class="ri-phone-line"></i></span>9560440185</p>
+                    <br>
+                    <div class="social-media-app">
+                        <a href="https://www.linkedin.com/in/sandhya-bhakuni-323b37265"><i class="ri-linkedin-box-fill icon"></i></a>
+                        <a href="https://github.com/"><i class="ri-github-fill"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="ri-twitter-x-fill icon"></i></a>
+                    </div>        
+            </div>
+        </div>
+       
+        <div class="copyright">
+            <p>copyright <span><i class="ri-copyright-line" ></i></span>sandhyabhakuni-portfolio All rights reserved.</p>
+        </div>
+        </footer>
+   
+<script src="index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bat ball wicket game</title>
+    <link rel="stylesheet" href="rockPaperScissor.css">
+</head>
+<body>
+    
+    <h1 class='heading'>Rock Paper Scissor Game</h1>
+    
+    
+    <button class="myBtn" onclick="
+    let computerChoice=generateComputerChoice();
+    let resultMsg=getResult('Rock',computerChoice);
+    showResult('Rock',computerChoice,resultMsg);
+    "><img class="Rock" src="images of BBW/rock.png" alt="Rock"></button>
+    <button class="myBtn" onclick="
+     computerChoice=generateComputerChoice();  
+     resultMsg=getResult('Paper',computerChoice);
+     showResult('Paper',computerChoice,resultMsg);  
+    "><img class="Paper" src="images of BBW/paper.png" alt="Paper"></button>
+    <button  class="myBtn" onclick="
+    computerChoice=generateComputerChoice();
+    resultMsg=getResult('Scissor',computerChoice);
+    showResult('Scissor',computerChoice,resultMsg); 
+     "><img class="Scissor" src="images of BBW/scissor.png" alt="Scissor"></button>
+     
+
+     <h3 id="userMove"></h3>
+     <h3 id="computerMove"></h3>
+     <h3 id="result"></h3>
+     <h3 id="score"></h3>
+     <button class="resetBtn" onclick="localStorage.clear()
+     resetScore();">Reset</button>
+    
+    <script>
+        let scoreStr=localStorage.getItem('store');
+        let score;
+        resetScore(scoreStr);
+        function resetScore(ScoreStr){
+             score= scoreStr ? JSON.parse(scoreStr): {//ternary operator
+            win:0,
+            loss:0,
+            tie:0,
+         
+        }
+        score.displayScore=function displayScore(){
+                return `Score: won:${score.win},loss:${score.loss},tie:${score.tie}`
+            };
+            showResult();
+        }
+
+        function generateComputerChoice(){
+            let computerChoice;
+            let randomNumber=Math.random() * 3;
+    if(randomNumber > 0 && randomNumber <= 1){
+        return 'Rock';    
+    }else if(randomNumber > 1 && randomNumber <= 2){
+        return 'Paper';
+    }else{
+        return 'Scissor';   
+    }
+        }
+
+        function getResult(userMove,computerMove){
+            if(userMove==='Rock'){
+               
+               if(computerMove ==='Scissor'){
+                  score.win++;
+                  return 'user won';
+               }
+               else if(computerMove ==='Rock'){
+                  score.tie++;
+                  return 'it is a tie';
+                 
+               }
+               else if(computerMove ==='Paper'){
+                  score.loss++;
+                  return 'computer won';
+                  
+               }
+            }
+            else if(userMove==='Paper'){
+                if(computerMove ==='Paper'){
+                  score.tie++;
+                  return 'it is a tie';
+               }
+               else if(computerMove ==='rock'){
+                  score.win++;
+                  return 'user won';
+               }
+               else if(computerMove ==='Scissor'){
+                  score.loss++;
+                  return 'computer won';
+               }
+            }
+                
+            else{
+                if(computerMove ==='Rock'){
+                    score.loss++;
+                  return'computer won';}
+                
+                else if(computerMove ==='Paper'){
+                    score.win++;
+                 return'user won';}
+                
+                else if(computerMove ==='Scissor'){
+                    score.tie++;
+                  return'it is a tie';}
+
+               }
+            }
+        
+        function showResult(userMove,computerMove,result){
+        localStorage.setItem('score',JSON.stringify(score));
+        document.querySelector('#userMove').innerText=userMove !==undefined ?`you have chosen ${userMove}`: '';
+        document.querySelector('#computerMove').innerText =computerMove !==undefined ?`computer choice is ${computerMove}`: '';
+        document.querySelector('#result').innerText=result!==undefined ?result: '';
+        document.querySelector('#score').innerText=score.displayScore();
+            
+        }
+        
+
+    </script>
+    
+</body>
+</html>

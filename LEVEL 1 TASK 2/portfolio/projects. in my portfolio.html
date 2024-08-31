@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <div class="container3">
+        <div class="heading"><h1> My Projects</h1></div>
+        <div class="my-column">
+                <img  class="project-img"src="portfolioImages/calculator.jfif" >
+            <div class="right-column">
+                <h1>Calulator</h1>
+                <p>This project involves developing a basic calculator application capable of performing fudamental arithmetic opertions such as: <span>addition,subtraction,multiplication,and division.</span>
+                    <br>The application features a user-friendly interface where users can input numbers and select operations to obtain results.</p>
+                    <button class="my-btn" id="calculator"> Open Tab</button>
+            </div>
+        </div>
+        <div class="my-column">
+            <img  class="project-img" src="portfolioImages/myntra.png">
+            <div class="right-column">
+                <h1>Myntra-Clone</h1>
+                <p>The Myntra shopping clone app replicates the design and layout of the Myntra e-commerce platform using only <span> HTML and CSS</span>.It features a responsive design with a product grid displaying images,titles and prices.The app includes a user-fiendly interface with a search bar and a visually appealing shopping cart layout.This Project showcase my skills in creating responsive,aesthetically pleasing web pages purely with HTML znd CSS,emphasizing my ability to build functional and attractive front end designs with relying on javascript and backened technologies. 
+                   </p>
+                    <button class="my-btn" id="MyntraClone"> Open Tab</button>
+            </div>
+        </div>
+        <div class="my-column">
+             <img class="project-img" src="portfolioImages/rockpaperscissor.jfif" >
+        <div class="right-column">
+            <h1>Rock Paper Scissor Game</h1>
+            <p>A Web based rock-paper scissor game developed using HTML,CSS and JavaScript.The project features a user-friendly interface with interactive buttons and real time feedback.Java-Script handles the game logic,including random choice generation and result determination.CSS ensures a responsive design with animations for enhanced user experience.The game tracks and displays scores for wins,loses and draws.Key challenges including ensuring fair computer choices using<span> Math.random()</span>and designing a responsive layout. <br>
+                <button class="my-btn" id="game"> Open Tab</button>
+        </div>
+        </div>
+    </div>
+    <script>
+                const calculator=document.querySelector('#calculator');
+        calculator.addEventListener('click',()=>{
+            window.open("calculator.html");
+        })
+        
+        const MyntraClone=document.querySelector('#Myntraclone');
+        MyntraClone.addEventListener('click',()=>{
+            window.open("myntra2.html");
+        })
+        
+        const game=document.querySelector('#game');
+        game.addEventListener('click',()=>{
+            window.open("rock paper scissor Game.html");
+        })
+    </script>
+</body>
+</html>
